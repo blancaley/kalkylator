@@ -7,7 +7,7 @@ const buttons = document.querySelector("#buttons");
 let result;
 let operand;
 let resultLine;
-
+let hej
 
 function renderDOM(e) {
     //Rensar resultat i DOM.
