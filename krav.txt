@@ -1,0 +1,26 @@
+Skapa en simpel kalkylator. Det ska finnas två input fält som tar in varsitt nummer, och när användaren fyllt i bägge och klickar på en knapp ska dessa två värdena adderas med varandra (+).
+Skapa ytterligare en knapp för att multiplicera dessa tal med varandra
+Skapa en knapp för att subtrahera dessa tal med varandra (tal1 - tal2). Om resultatet blir mindre än 0, skriv ut ett snällt felmeddelande i webbläsaren, där det står tydligt vad användaren gjort fel och behöver rätta till för att få det att fungera.
+
+
+Version 1
+[x] Det skall ha ett plats att spara nummer. variable
+[x] Det skall ha ett sätt att ta in 2 siffror. input
+[x] Det skall ha ett sätt att visa resultatet. render i DOM
+
+
+Version 2
+[x] Det skall ha en funktion för att addera.
+[x] Det skall ha en funktion för att multiplicera.
+[x] Det skall ha en funktion för att subtrahera.
+[x] Det skall ha ett sätt för att visa resultatet.
+[x] Det skall ha olika knappar för att säga vilken operation det gäller - addera, ta bort, dividera, multiplicera.
+
+
+Version 3
+[x] Det skall visa hela operationen (ex. 5+5=10).
+[x] Det skall inte visa när resultatet blir mindre än 0.
+[x] Det skall visa ett felmeddelande i webbläsaren.
+
+Version 4
+[] Styla design.
