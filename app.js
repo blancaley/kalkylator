@@ -8,6 +8,7 @@ let result;
 let operand;
 let resultLine;
 let hej
+let test
 
 function renderDOM(e) {
     //Rensar resultat i DOM.
