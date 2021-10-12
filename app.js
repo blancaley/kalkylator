@@ -17,17 +17,7 @@ function renderDOM(e) {
 
     //Visar symbolen mellan de två nummer.
     operator = document.createElement("span");
-    switch (e.currentTarget) {
-        case addButton:
-            operator.innerText = e.currentTarget.textContent;
-            break;
-        case subtractButton:
-            operator.innerText = e.currentTarget.textContent;
-            break;
-        case multiplyButton:
-            operator.innerText = e.currentTarget.textContent;
-            break;
-    }
+    operator.innerText = e.currentTarget.textContent;
     firstNum.insertAdjacentElement("afterend", operator);
 
     //Visar resultatet.
