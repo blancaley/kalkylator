@@ -34,9 +34,13 @@ addButton.addEventListener("click", function add(e) {
 subtractButton.addEventListener("click", function subtract(e) {
     result = parseFloat(firstNum.value) - parseFloat(secondNum.value);
     if (result < 0) {
+        //Kollar om det redan har felmeddelandet.
+        if (!document.querySelector(".error-message-subtract")) {
         let p = document.createElement("p");
         buttons.insertAdjacentElement("afterend", p);
+        p.classList.add("error-message-subtract");
         p.innerText = "Answer is a negative number. Make sure that the first number is bigger than the second.";
+        }
     } else {
         renderDOM(e);
     }
