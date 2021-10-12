@@ -4,33 +4,31 @@ const addButton = document.querySelector("#add");
 const subtractButton = document.querySelector("#subtract");
 const multiplyButton = document.querySelector("#multiply");
 const buttons = document.querySelector("#buttons");
+let operator;
 let result;
-let operand;
 let resultLine;
-let hej
-let test
 
 function renderDOM(e) {
     //Rensar resultat i DOM.
-    if (operand) {
-    operand.remove();
+    if (operator) {
+    operator.remove();
     resultLine.remove();
     }
 
     //Visar symbolen mellan de två nummer.
-    operand = document.createElement("span");
+    operator = document.createElement("span");
     switch (e.currentTarget) {
         case addButton:
-            operand.innerText = e.currentTarget.textContent;
+            operator.innerText = e.currentTarget.textContent;
             break;
         case subtractButton:
-            operand.innerText = e.currentTarget.textContent;
+            operator.innerText = e.currentTarget.textContent;
             break;
         case multiplyButton:
-            operand.innerText = e.currentTarget.textContent;
+            operator.innerText = e.currentTarget.textContent;
             break;
     }
-    firstNum.insertAdjacentElement("afterend", operand);
+    firstNum.insertAdjacentElement("afterend", operator);
 
     //Visar resultatet.
     resultLine = document.createElement("span");
